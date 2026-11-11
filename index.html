@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Our civil wedding guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f2f5f1;--card:#fff;--ink:#1d2b2c;--mut:#5d6f6e;--line:#d5dfd9;--acc:#27665f;--accI:#fff;--bride:#f3cfc8;--groom:#c9d9ee;--both:#d3e6d2;--warn:#b3382c;--tbl:#e9efe9;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141c1c;--card:#1d2828;--ink:#e8efec;--mut:#9fb2ae;--line:#304040;--acc:#7cc4ba;--accI:#0f1a19;--bride:#5a3a36;--groom:#34475f;--both:#365238;--warn:#ff8f80;--tbl:#2a3a3a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141c1c;--card:#1d2828;--ink:#e8efec;--mut:#9fb2ae;--line:#304040;--acc:#7cc4ba;--accI:#0f1a19;--bride:#5a3a36;--groom:#34475f;--both:#365238;--warn:#ff8f80;--tbl:#2a3a3a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:'Bricolage Grotesque',Figtree,sans-serif;margin:0}
+main,header{max-width:1360px;margin:0 auto;padding:16px}
+header h1{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.15}
+.names{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 16px;color:var(--mut)}
+input,select,button{font:inherit;color:var(--ink)}
+input,select{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:7px 10px;min-width:0}
+input:focus-visible,select:focus-visible,button:focus-visible,.chip:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.names input{width:170px;font-weight:600}
+nav{display:flex;gap:6px;border-bottom:1px solid var(--line);overflow-x:auto}
+nav button{background:none;border:0;border-bottom:3px solid transparent;padding:10px 14px;cursor:pointer;font-weight:600;color:var(--mut);white-space:nowrap}
+nav button[aria-selected=true]{color:var(--ink);border-color:var(--acc)}
+.btn{background:var(--acc);color:var(--accI);border:0;border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer}
+.btn.alt{background:none;color:var(--ink);border:1px solid var(--line)}
+.seat{display:grid;grid-template-columns:290px 1fr;gap:20px;align-items:start}
+@media(max-width:800px){.seat{grid-template-columns:1fr}}
+.side{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;position:sticky;top:8px}
+@media(max-width:800px){.side{position:static}}
+.side h2,.bar h2{font-size:1.1rem;margin-bottom:6px}
+.add{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.add input{flex:1 1 140px}
+.pool{display:flex;flex-wrap:wrap;gap:6px;min-height:60px;padding:8px;border:1px dashed var(--line);border-radius:8px;margin-top:8px}
+.pool.over,.tb.over{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 10%,var(--card))}
+.chip{display:inline-flex;align-items:center;gap:4px;padding:3px 4px 3px 10px;border-radius:99px;background:var(--both);cursor:grab;user-select:none;font-size:.92rem}
+.chip.bride{background:var(--bride)}.chip.groom{background:var(--groom)}
+.chip.on{outline:2px solid var(--acc);outline-offset:1px}
+.chip button{border:0;background:none;cursor:pointer;opacity:.6;font-size:1rem;line-height:1;padding:2px 6px}
+.chip button:hover{opacity:1}
+.key{font-size:.85rem;color:var(--mut);margin-top:8px}
+.key i{display:inline-block;width:10px;height:10px;border-radius:50%;margin:0 3px 0 8px;vertical-align:baseline}
+.hint{background:var(--acc);color:var(--accI);border-radius:8px;padding:6px 10px;margin-top:8px;font-size:.9rem}
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}
+.stage{background:var(--ink);color:var(--bg);text-align:center;border-radius:8px 8px 40px 40px;padding:8px;font-weight:600;margin-bottom:14px}
+.tables{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.tb{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:6px}
+.tb header{display:flex;gap:4px;padding:0}
+.tb header input{flex:1;font-weight:700;border-color:transparent;background:none;font-family:'Bricolage Grotesque',sans-serif;font-size:1.05rem}
+.tb header input:hover,.lb:hover{border-color:var(--line)}
+.lb{font-size:.88rem;color:var(--mut);border-color:transparent;background:none}
+.x{border:0;background:none;cursor:pointer;color:var(--mut);font-size:1.2rem}
+.seats{display:flex;flex-wrap:wrap;gap:5px;min-height:70px;align-content:flex-start}
+.seats em{color:var(--mut);font-size:.88rem}
+.tb footer{font-size:.85rem;color:var(--mut)}
+.tb footer.full{color:var(--warn);font-weight:600}
+.cap{width:54px;padding:2px 6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:16px}
+.prog{height:10px;background:var(--line);border-radius:9px;overflow:hidden;margin:8px 0 4px}
+.prog div{height:100%;background:var(--acc);transition:width .3s}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.ck{display:flex;gap:10px;padding:6px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.ck input{accent-color:var(--acc);width:18px;height:18px;flex:none;margin-top:3px}
+.ck.done span{text-decoration:line-through;color:var(--mut)}
+.row{display:flex;gap:6px;margin-bottom:6px}
+.row .tm{width:min(185px,40%);flex:none}.row .a{flex:1}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:var(--card);padding:7px 14px;cursor:pointer;font-weight:600}
+.seg button[aria-pressed=true]{background:var(--acc);color:var(--accI)}
+.fg{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}.fl{display:flex;flex-direction:column;gap:2px;font-size:.85rem;color:var(--mut)}.fl input,.gr input{width:100%}.gr{display:grid;grid-template-columns:minmax(130px,1fr) repeat(var(--n),minmax(0,1.3fr));gap:6px;margin-bottom:6px;align-items:center}@media(max-width:700px){.gr{grid-template-columns:1fr}}
+
+.bar .sp{flex:1}
+.tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 10px;margin-bottom:10px;min-height:52px}
+.tools input[type=text]{width:160px;font-weight:600}
+.stp{display:inline-flex;align-items:center;gap:4px}.stp b{min-width:2ch;text-align:center}
+.stp button{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:var(--card);cursor:pointer;font-size:1.1rem;line-height:1}
+.btn.sm{padding:5px 10px;font-size:.9rem}.btn.del{color:var(--warn)}
+.dim{width:84px}
+.view{max-height:80vh;overflow:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.fp{position:relative;transform-origin:0 0;background-image:radial-gradient(var(--line) 1px,transparent 1px);background-size:24px 24px}
+.stg{position:absolute;left:50%;top:8px;transform:translateX(-50%);width:460px;background:var(--ink);color:var(--bg);text-align:center;border-radius:8px 8px 40px 40px;padding:6px;font-weight:600}
+.tbl{position:absolute}
+.body{position:absolute;background:var(--tbl);border:2px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:move;touch-action:none;user-select:none;text-align:center;line-height:1.15;overflow:hidden;padding:2px}
+.body.round{border-radius:50%}.body.long{border-radius:10px}.body.v{writing-mode:vertical-rl}
+.body b{font-family:'Bricolage Grotesque',sans-serif;font-size:.85rem;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.body small{color:var(--mut);font-size:.72rem;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.body.full small:last-child{color:var(--warn);font-weight:700}
+.tbl.sel .body{border-color:var(--acc);box-shadow:0 0 0 3px color-mix(in srgb,var(--acc) 30%,transparent)}
+.st{position:absolute;width:46px;height:46px;border-radius:50%;border:1.5px dashed var(--line);display:flex;align-items:center;justify-content:center;font-size:.7rem;color:var(--mut);background:var(--card);cursor:pointer;overflow:hidden;padding:0 3px;text-align:center;line-height:1.05;word-break:break-word}
+.st[draggable=true]{border-style:solid;border-color:transparent;color:var(--ink);font-weight:600;cursor:grab}
+.st.bride{background:var(--bride)}.st.groom{background:var(--groom)}.st.both{background:var(--both)}
+.st.on{outline:3px solid var(--acc);outline-offset:1px}
+.st.over{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 22%,var(--card))}
+.rv{display:grid;grid-template-columns:minmax(120px,220px) 1fr;gap:4px 14px;font-size:.95rem}
+.rv .k{color:var(--mut)}.rv .no{color:var(--warn)}
+@media(max-width:600px){.rv{grid-template-columns:1fr}.rv .k{margin-top:6px}}
+.badge{background:color-mix(in srgb,var(--warn) 14%,var(--card));color:var(--warn);border-radius:99px;padding:2px 10px;font-size:.85rem;font-weight:600}
+.badge.ok{background:color-mix(in srgb,var(--acc) 16%,var(--card));color:var(--acc)}
+.ft{max-width:1360px;margin:8px auto 24px;padding:0 16px;color:var(--mut);font-size:.85rem;text-align:center}
+#gate{position:fixed;inset:0;z-index:99;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:20px}
+#gate form{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;max-width:340px;width:100%;display:grid;gap:10px;text-align:center}
+#gate h1{font-size:1.4rem}#gate p{margin:0;color:var(--mut);font-size:.9rem}#gate .err{color:var(--warn);min-height:1.2em}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Our civil wedding guide</h1>
+  <div class="names">The wedding of <input data-f="b" placeholder="Bride’s name" aria-label="Bride’s name"> and <input data-f="g" placeholder="Groom’s name" aria-label="Groom’s name"> on <input type="date" data-f="wd" aria-label="Wedding date"> <b id="cd" role="status" style="color:var(--acc);font-size:1.05rem"></b></div>
+  <nav role="tablist">
+    <button role="tab" data-tab="info">Our details</button>
+    <button role="tab" data-tab="seat">Seating plan</button>
+    <button role="tab" data-tab="check">Planning checklist</button>
+    <button role="tab" data-tab="prep">Prenup & bags</button>
+    <button role="tab" data-tab="flow">Day-of timeline</button>
+    <button role="tab" data-tab="sup">Suppliers</button>
+    <button role="tab" data-tab="music">Music & speeches</button>
+    <button role="tab" data-tab="rev">Review &amp; PDF</button>
+  </nav>
+</header>
+<main id="app"></main>
+<footer class="ft">© 2026. All rights reserved. This is a private wedding planner. Please do not copy, reuse or share it without permission.</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+/* OPTIONAL PASSCODE: type a word between the quotes to turn the passcode screen on, e.g. const PASSCODE='ourday'; leave '' to turn it off.
+   This only keeps casual visitors out. It is not real security, because anyone can read the page source. */
+const PASSCODE='';
+(function(){
+ var ok=false;try{ok=sessionStorage.getItem('gate')==='1'}catch(e){}
+ if(!PASSCODE||ok)return;
+ document.addEventListener('DOMContentLoaded',function(){
+  var g=document.createElement('div');g.id='gate';
+  g.innerHTML='<form><h1>Private wedding planner</h1><p>Enter the passcode to continue.</p><input type="password" id="gp" aria-label="Passcode" autocomplete="off"><button class="btn" type="submit">Open</button><div class="err" role="alert"></div></form>';
+  document.body.appendChild(g);
+  g.querySelector('form').addEventListener('submit',function(e){e.preventDefault();
+   if(g.querySelector('#gp').value===PASSCODE){try{sessionStorage.setItem('gate','1')}catch(x){}g.remove()}
+   else g.querySelector('.err').textContent='That passcode is not right.'});
+ });
+})();
+</script>
+<script>
+const $=s=>document.querySelector(s),uid=()=>Math.random().toString(36).slice(2,8);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const P1="Pamamanhikan, then set the wedding date|Schedule prenup shoot|Set the budget|Book a videographer|Set number of guests|Book an invitation supplier|Finalize entourage line-up|Find a wedding singer/band (optional)|Book a venue|Book a room for dressing up|Book a bridal car|Prepare a checklist of priorities|Distribute invitations|Attend wedding fairs|Complete government requirements|Brainstorm: Pinterest, YouTube, supplier pages – ask rates, then compare|Choose wedding theme/motif|Buy wedding rings|Book a wedding attire supplier/designer|Shop for souvenirs".split('|');
+const P2="Book a hair and make-up artist|Bridal shower (optional)|Book a florist|Bachelor party (optional)|Book a photographer|Shop for wedding accessories|Book sounds and lights|Shop for a gift for your partner or parents|Book a host and spinner|Choose wedding songs|Write your vows|Confirm attendance (RSVP)|Pick up items from suppliers|Book a decorator|Prepare/book a crew meal|Book a cake supplier|Grooming (hair, nails, facial, spa)|Book a pica-pica, cocktail or grazing table|Book a photobooth|Book an effects supplier (confetti, smoke, bubbles, cold fire)|Book a mobile bar".split('|');
+const rows=s=>s.split('|').map(a=>({t:'',a}));
+const A=s=>s.split('|');
+const PI=A("Complete name|Nickname / age|Address|Contact numbers|Email|Birthday|Profession / occupation|Birthplace|Company or business|Contact person if abroad|Mother’s name|Father’s name");
+const Q=A("When/where did you first meet?|When/where were you engaged?|What was your first gift to each other?|When did you officially become a couple?|Courting stage – what year?|When and where was your first date?|3 things you have in common|3 things you usually do when dating|3 places you usually go together|Your favorite place ever|2–3 hobbies you share");
+const PR=A("Location|Address|Date of prenup|Call time|Number of heads|Meeting place|Media team|Gown/outfit|Transportation|Make-up artist|Food|Concept|Props needed");
+const BR=A("Wedding gown|Mannequin, petticoat|Gifts for groom, parents, female entourage|Robe|Shoes, sandals, slippers|Underwear, tissue, napkin|Perfume|Handkerchief|Candies|Necklace, earrings, crown or headdress|First aid kit|Vow|Sewing kit|Props for photo/video shoot|Deodorant, lotion, feminine wash|Contact lens|Engagement ring|Wallet/pouch|Other jewelry|Gimik stuff|Extra clothes|Entourage stuff (robes, slippers)");
+const GR=A("Coat/barong|Vest|White long sleeve|Necktie or bow tie|Pants|Belt|Socks|Underwear|Watch|Shades|Perfume|Wallet|Shoes|Slippers|First-look attire (boxers, white plain shirt)|Hair wax/gel|Shaving kit|Deodorant|Handkerchief|Extra shirt|Gifts for bride, parents, male entourage");
+const SUP=A("Make-up|Hair stylist|Gown/attire|Robe|Photo|Video|Caterer|Pica-pica/grazing|Cake|Souvenir|Florist|Lights and sound|Host/spinner|Musician/band|Bridal car|Crew meal|Photobooth|Stylist|Decorator|Food and lechon|Singer/band|Special instructions");
+const CALL="Bath time and breakfast/coffee|Turn over checklists, details and remaining balance to the OTD coordinator|Groom and bride and squads dress for 1st look|Bride hair and make-up with team bride|Wedding details shoot|Bride 1st look and vow shoot – solo|Groom 1st look and vow shoot – solo|Bride 1st look attire shoot with team bride|Groom 1st look attire shoot with groom squad|Parents hair and make-up / bride re-touch|Change for 2nd look – gown attire|Bride 2nd look – solo|Groom 2nd look – solo|Bride 2nd look with squad|Groom 2nd look with squad|Re-touch all|Bride family shoot|Groom family shoot|Breakfast/lunch|Final shoot – “pahabol”|Travel to reception venue|Re-touch|Advance lunch/dinner|Reception rites|End";
+const SONGS=A("Grand entrance|Father-daughter last dance|Mother-groom last dance|Couple’s first dance|Prosperity dance|Singles’ games"),SPK=A("Prayer / grace before meal|Toast / best man’s toast|Witness 1|Witness 2|Messages from parents – groom’s side|Messages from parents – bride’s side"),OTH=A("Ladies|Gentlemen|Others");
+const inp=(k,l)=>`<input data-f="v" data-id="${k}" value="${esc(S.f[k]||'')}" placeholder="${esc(l)}" aria-label="${esc(l)}">`;
+const fg=(g,a)=>`<div class="fg">${a.map((l,i)=>`<label class="fl">${l}${inp(g+i,l)}</label>`).join('')}</div>`;
+const gr=(g,a,c)=>a.map((l,i)=>`<div class="gr" style="--n:${c.length}"><b>${l}</b>${c.map((h,j)=>inp(g+i+'_'+j,h)).join('')}</div>`).join('');
+const L=(a,k)=>a.map((t,i)=>`<label class="ck${S.f[k+i]?' done':''}"><input type="checkbox" data-f="ck2" data-id="${k+i}"${S.f[k+i]?' checked':''}><span>${esc(t)}</span></label>`).join('');
+const C=(h,b,n)=>`<div class="card"><h2>${h}</h2>${n?`<p class="key">${n}</p>`:''}${b}</div>`;
+const infoView=()=>C('Bride',fg('pb',PI),'If a parent can’t walk with you, a proxy is welcome: a sibling, tito or tita can stand in.')+C('Groom',fg('pg',PI))+C('Partner questions',fg('q',Q),'Priests sometimes ask these. They also work as a game with close relatives and friends at the wedding.');
+const prepView=()=>C('Prenup details',fg('pr',PR))+`<div class="cols">`+C('Bride’s items',L(BR,'cb'),'Pack in separate bags or boxes for the preparation area.')+C('Groom’s items',L(GR,'cg'))+`</div>`;
+const supView=()=>C('Endorsement to your on-the-day coordinator',gr('s',SUP,['Company','Contact person','Contact number']));
+const musicView=()=>C('Song requests',gr('m',SONGS,['Song','Remarks']),'A proxy is always welcome for the dances if a loved one has passed.')+C('Speeches',gr('sp',SPK,['In charge','Contact number']))+C('Singles’ games',gr('o',OTH,['Particulars','Remarks']),'Discuss preferred games with your emcee.');
+const LUNCH="Guest arrival: photo booth, pica-pica, band|Call to order by emcee – roll call of ninongs and ninangs|Entrance of parents and entourage|AVP – wedding teaser|Couple’s grand entrance|Quick Q&A with host (kamustahan)|First dance and confetti|Money dance|Cake slicing|Wine toast|Prayer for the food|Lunch with band music|Photo opportunity with the couple|AVP – photo prenup|Second entrance – MOB dance|Messages from ninongs, ninangs and parents|Single games and the 3 kisses|Souvenir distribution|SDE playing|Couple’s thank-you message|Finale";
+const DINNER="Guest arrival: photo booth, pica-pica, band|Call to order by emcee – roll call of ninongs and ninangs|Entrance of parents and entourage|AVP – wedding teaser|Couple’s grand entrance|MOB dance with entourage|Quick Q&A with host (kamustahan)|First dance and confetti|Money dance|Cake slicing|Wine toast|Messages from witnesses and parents|Prayer for the food|Dinner with band music|Photo opportunity – table hopping|AVP – photo/video prenup|Single games and the 3 kisses|Souvenir distribution|SDE playing|Couple’s thank-you message|Finale";
+const TL1=[['6:00 AM','Bath time & breakfast/coffee'],['6:30 AM','Turnover checklists, details & remaining balance to OTD Coordinator'],['7:00 AM','Bride, groom and squad prepare for 1st look'],['7:00 AM – 10:00 AM','Bride hair and makeup with Team Bride'],['9:30 AM – 10:00 AM','Wedding details shoot'],['10:00 AM – 10:20 AM','Bride 1st look and vow shoot – solo'],['10:20 AM – 10:40 AM','Groom 1st look and vow shoot – solo'],['10:40 AM – 11:00 AM','Bride 1st look attire shoot with Team Bride'],['11:00 AM – 11:20 AM','Groom 1st look attire shoot with Groom Squad'],['10:30 AM – 11:30 AM','Parents’ hair and makeup / Bride retouch'],['11:20 AM – 11:45 AM','Change into 2nd look – gown attire'],['11:45 AM – 12:00 PM','Bride 2nd look – solo'],['12:00 PM – 12:15 PM','Groom 2nd look – solo'],['12:15 PM – 12:30 PM','Bride 2nd look group shot with squad'],['12:30 PM – 12:45 PM','Groom 2nd look group shot with squad'],['12:45 PM – 1:00 PM','Retouch all'],['1:00 PM – 1:15 PM','Bride family shoot'],['1:15 PM – 1:30 PM','Groom family shoot'],['1:30 PM – 1:50 PM','Lunch'],['1:50 PM – 2:10 PM','Final shoot – “pahabol”'],['2:10 PM – 2:30 PM','Final retouch and preparation'],['2:30 PM – 2:50 PM','Guests seated / Bridal party lineup'],['3:00 PM','Wedding Ceremony Begins']],TL2=[['4:00 PM – 4:30 PM','Couple portraits / Family photos'],['4:30 PM – 5:00 PM','Guest cocktail / Reception preparation'],['5:00 PM – 5:30 PM','Advance dinner for couple and entourage'],['5:30 PM – 6:00 PM','Guest seating / Reception program preparation'],['6:00 PM','Reception Program Begins'],['9:00 PM – 10:00 PM','End of reception']];
+const FW=2200,FH=1000,SZ=46,SP=52;
+const fs=()=>[S.fw||FW,S.fh||1500];
+const dtab=()=>[
+ {id:uid(),k:'long',n:'VIP table 1',l:'Immediate family of the bride',c:30,x:708,y:70,v:0},
+ {id:uid(),k:'long',n:'VIP table 2',l:'Immediate family of the groom',c:30,x:708,y:240,v:0},
+ ...Array.from({length:10},(_,i)=>({id:uid(),k:'round',n:'Table '+(i+1),l:i==0?'Entourage and VIPs':'',c:12,x:414+(i%5)*280,y:420+Math.floor(i/5)*280,v:0}))];
+const seed=()=>({b:'',g:'',tab:'info',mode:'lunch',guests:[],checks:{},flow:{lunch:rows(LUNCH),dinner:rows(DINNER)},
+ tables:dtab()});
+let S;try{S=JSON.parse(localStorage.getItem('wg'))}catch(e){}S=S||seed();S.f=S.f||{};S.flow.call=S.flow.call||rows(CALL);S.z=S.z||.85;if(!S.fv){S.flow.call=TL1.map(([t,a])=>({t,a}));S.flow.after=TL2.map(([t,a])=>({t,a}));S.fv=1;S.mode='call'}
+if(S.v!=2||S.tables.some(t=>!t.k)){S.guests.forEach(x=>{x.t=null;x.i=null});S.tables=dtab();S.v=2;S.z=.6;S.tab='info'}
+const save=()=>{try{localStorage.setItem('wg',JSON.stringify(S))}catch(e){}};
+let sel=null,selT=null;
+
+function chip(x,a){return `<span class="chip ${x.s}${sel==x.id?' on':''}" tabindex="0" draggable="true" data-g="${x.id}" data-a="sel">${esc(x.n)}<button data-a="${a}" data-g="${x.id}" aria-label="${a=='del'?'Delete':'Unseat'} ${esc(x.n)}">×</button></span>`}
+function geo(t){
+ const c=t.c;
+ if(t.k=='round'){
+  const ring=Math.max(64,SP*c/(2*Math.PI)),half=ring+SZ/2+2,r=Math.max(24,ring-SZ/2-4);
+  return{w:half*2,h:half*2,body:`left:${half-r}px;top:${half-r}px;width:${2*r}px;height:${2*r}px`,
+   seats:Array.from({length:c},(_,i)=>{const a=-Math.PI/2+2*Math.PI*i/c;return{x:half+ring*Math.cos(a),y:half+ring*Math.sin(a)}})};
+ }
+ const a=Math.ceil(c/2),b=c-a,L=a*SP+4,H=148,seats=[];
+ for(let i=0;i<c;i++){const top=i<a,j=top?i:i-a,x=28+j*SP+(top?0:(a-b)*SP/2),y=top?23:125;seats.push(t.v?{x:y,y:x}:{x,y})}
+ return t.v?{w:H,h:L,body:`left:52px;top:0;width:44px;height:${L}px`,seats}:{w:L,h:H,body:`left:0;top:52px;width:${L}px;height:44px`,seats};
+}
+const first=n=>n.trim().split(/\s+/)[0];
+function tableHtml(t){
+ const g=geo(t),occ={};S.guests.forEach(x=>{if(x.t==t.id)occ[x.i]=x});const n=Object.keys(occ).length;
+ return `<div class="tbl${selT==t.id?' sel':''}" data-tb="${t.id}" style="left:${t.x}px;top:${t.y}px;width:${g.w}px;height:${g.h}px"><div class="body ${t.k}${t.v?' v':''}${n>t.c?' full':''}" style="${g.body}"><b>${esc(t.n)}</b><small class="lbl">${esc(t.l||'')}</small><small>${n} of ${t.c}</small></div>`+
+ g.seats.map((p,i)=>{const o=occ[i];return `<div class="st${o?' '+o.s:''}${o&&o.id==sel?' on':''}" style="left:${p.x-SZ/2}px;top:${p.y-SZ/2}px" data-t="${t.id}" data-i="${i}"${o?` draggable="true" data-g="${o.id}" title="${esc(o.n)}"`:''}>${o?esc(first(o.n)):i+1}</div>`}).join('')+`</div>`}
+function toolsHtml(){
+ const t=S.tables.find(x=>x.id==selT);
+ return t?`<input type="text" data-f="tn" value="${esc(t.n)}" aria-label="Table name"><input type="text" data-f="tl" value="${esc(t.l||'')}" placeholder="Who sits here?" aria-label="Place card label">
+ <span class="stp">Seats <button data-a="dec" aria-label="Fewer seats">−</button><b>${t.c}</b><button data-a="inc" aria-label="More seats">+</button></span>
+ ${t.k=='long'?'<button class="btn alt sm" data-a="rot">Rotate</button>':''}<button class="btn alt sm" data-a="dup">Duplicate</button><button class="btn alt sm del" data-a="dts">Delete</button>`
+ :'<span class="key" style="margin:0">Select a table to rename it, label it, change its seats, rotate or delete it.</span>'}
+function seatView(){
+ const g=S.guests,un=g.filter(x=>!x.t),sel_=g.find(x=>x.id==sel),cap=S.tables.reduce((a,t)=>a+t.c,0),z=S.z;
+ return `<div class="seat"><aside class="side"><h2>Guest list</h2>
+  <div class="add"><input id="gn" placeholder="Names, separated by commas" aria-label="Guest names"><select id="gs" aria-label="Side"><option value="bride">Bride</option><option value="groom">Groom</option><option value="both">Both</option></select><button class="btn" data-a="add">Add guests</button></div>
+  <strong>${un.length} not seated</strong> <span class="key">of ${g.length} guests · ${cap} seats</span>
+  <div class="pool" data-pool>${un.map(x=>chip(x,'del')).join('')||'<em class="key">Add names above, then drag them to a seat. On a phone, tap a name, then tap a seat.</em>'}</div>
+  ${sel_?`<div class="hint">Now tap a seat for ${esc(sel_.n)}</div>`:''}
+  <div class="key"><i style="background:var(--bride)"></i>Bride<i style="background:var(--groom)"></i>Groom<i style="background:var(--both)"></i>Both</div></aside>
+ <section><div class="bar"><button class="btn alt" data-a="ar">+ Round table</button><button class="btn alt" data-a="al">+ Long table</button><span class="sp"></span><span class="stp"><button data-a="zo" aria-label="Zoom out">−</button><b>${Math.round(z*100)}%</b><button data-a="zi" aria-label="Zoom in">+</button></span><span class="stp">Floor <input type="number" class="dim" min="600" max="6000" step="100" data-f="fw" value="${fs()[0]}" aria-label="Floor width in pixels"> × <input type="number" class="dim" min="600" max="6000" step="100" data-f="fh" value="${fs()[1]}" aria-label="Floor height in pixels"></span><button class="btn alt" data-a="reset">Clear seating</button></div>
+  <div class="tools" id="tools">${toolsHtml()}</div>
+  <div class="view"><div style="width:${fs()[0]*z}px;height:${fs()[1]*z}px"><div class="fp" style="width:${fs()[0]}px;height:${fs()[1]}px;transform:scale(${z})"><div class="stg">Stage</div>${S.tables.map(tableHtml).join('')}</div></div></div>
+  <p class="key">The long VIP tables seat guests on both sides (seats 1–15 on one side, 16–30 on the other). Drag a table by its middle to move it. Drag a seated name to another seat to swap, or back to the guest list to unseat. Closest to the stage first: immediate family, VIPs, entourage.</p></section></div>`}
+function checkView(){
+ const all=P1.length+P2.length,n=Object.values(S.checks).filter(Boolean).length,list=(a,k)=>a.map((t,i)=>`<label class="ck${S.checks[k+i]?' done':''}"><input type="checkbox" data-f="ck" data-id="${k+i}"${S.checks[k+i]?' checked':''}><span>${esc(t)}</span></label>`).join('');
+ return `<div class="card"><h2>${n} of ${all} done</h2><div class="prog"><div style="width:${n/all*100}%"></div></div><p class="key">Skip anything that doesn’t apply to your wedding.</p></div>
+ <div class="cols"><div class="card"><h3>Part 1</h3>${list(P1,'a')}</div><div class="card"><h3>Part 2</h3>${list(P2,'b')}</div></div>`}
+function flowView(){
+ const r=S.flow[S.mode];
+ return `<div class="card"><div class="bar"><h2>Day-of timeline</h2><span class="seg"><button data-a="mode" data-m="call" aria-pressed="${S.mode=='call'}">Shoot day</button><button data-a="mode" data-m="after" aria-pressed="${S.mode=='after'}">After ceremony</button><button data-a="mode" data-m="lunch" aria-pressed="${S.mode=='lunch'}">Lunch</button><button data-a="mode" data-m="dinner" aria-pressed="${S.mode=='dinner'}">Dinner</button></span></div>
+ <p class="key">Just a guide. Rename, re-time, add or remove parts to fit your crowd. A professional host helps the flow.</p>
+ ${r.map((x,i)=>`<div class="row"><input class="tm" type="text" data-f="ft" data-id="${i}" value="${esc(x.t)}" placeholder="Time" aria-label="Time"><input class="a" data-f="fa" data-id="${i}" value="${esc(x.a)}" aria-label="Activity"><button class="x" data-a="fd" data-id="${i}" aria-label="Remove">×</button></div>`).join('')}
+ <button class="btn alt" data-a="fa">Add a part</button></div>`}
+let DL=null;
+(async()=>{try{DL=await claude.use('downloads')}catch(e){}if(S.tab=='rev')draw()})();
+function model(){
+ const f=k=>String(S.f[k]||'').trim(),F=(g,a)=>a.map((l,i)=>[l,f(g+i)]);
+ const G=(g,a,c)=>a.map((l,i)=>[l,c.map((h,j)=>{const v=f(g+i+'_'+j);return v?h+': '+v:''}).filter(Boolean).join(' · ')]);
+ const todo=(a,k,chk)=>a.filter((t,i)=>!chk(k+i));
+ const p1=todo(P1,'a',k=>S.checks[k]),p2=todo(P2,'b',k=>S.checks[k]),all=P1.length+P2.length;
+ const bb=todo(BR,'cb',k=>S.f[k]),gg=todo(GR,'cg',k=>S.f[k]);
+ const flow=(h,r)=>({h,tab:'flow',lines:(r||[]).map(x=>[x.t||'',x.a||''])});
+ const seat=S.tables.map(t=>{const gs=S.guests.filter(x=>x.t==t.id).sort((a,b)=>a.i-b.i);
+  return[t.n+(t.l?' – '+t.l:'')+' ('+gs.length+' of '+t.c+' seats)',gs.map(x=>(x.i+1)+' '+x.n).join(', ')]});
+ const un=S.guests.filter(x=>!x.t);
+ return[
+ {h:'Couple',tab:'info',m:1,lines:[['Bride',S.b||''],['Groom',S.g||'']]},
+ {h:'Bride’s details',tab:'info',m:1,lines:F('pb',PI)},
+ {h:'Groom’s details',tab:'info',m:1,lines:F('pg',PI)},
+ {h:'Partner questions',tab:'info',m:1,lines:F('q',Q)},
+ {h:'Planning checklist',tab:'check',lines:[['Done',(all-p1.length-p2.length)+' of '+all],['Still to do',p1.concat(p2).join('; ')||'Everything is ticked']]},
+ {h:'Prenup details',tab:'prep',m:1,lines:F('pr',PR)},
+ {h:'Bags and items',tab:'prep',lines:[['Bride’s items packed',(BR.length-bb.length)+' of '+BR.length],['Still to pack (bride)',bb.join('; ')||'All packed'],['Groom’s items packed',(GR.length-gg.length)+' of '+GR.length],['Still to pack (groom)',gg.join('; ')||'All packed']]},
+ flow('Timeline – shoot day',S.flow.call),flow('Timeline – after ceremony',S.flow.after),flow('Reception flow – lunch',S.flow.lunch),flow('Reception flow – dinner',S.flow.dinner),
+ {h:'Seating plan',tab:'seat',lines:seat.concat([['Not yet seated ('+un.length+')',un.map(x=>x.n).join(', ')||'Everyone is seated']])},
+ {h:'Suppliers',tab:'sup',m:1,lines:G('s',SUP,['Company','Contact person','Contact number'])},
+ {h:'Song requests',tab:'music',m:1,lines:G('m',SONGS,['Song','Remarks'])},
+ {h:'Speeches',tab:'music',m:1,lines:G('sp',SPK,['In charge','Contact number'])},
+ {h:'Singles’ games',tab:'music',m:1,lines:G('o',OTH,['Particulars','Remarks'])}
+ ]}
+function reviewView(){
+ const M=model(),ok=!!window.jspdf;
+ const miss=s=>s.m?s.lines.filter(l=>!l[1]).length:0,tot=M.reduce((a,s)=>a+miss(s),0);
+ return C('Review & download',`<button class="btn" data-a="pdf"${ok?'':' disabled'}>Download as PDF</button> <span id="pdfmsg" class="key" role="status">${ok?'':'The PDF tool did not load. Check your internet connection and reload.'}</span>`,
+  tot?`${tot} details are still empty. Use Edit on any section to fix it, then come back here.`:'Everything is filled in. Check each section, then download.')+
+ M.map(s=>{const n=miss(s);return `<div class="card"><div class="bar"><h2>${esc(s.h)}</h2>${s.m?`<span class="badge${n?'':' ok'}">${n?n+' empty':'Complete'}</span>`:''}<span class="sp"></span><button class="btn alt sm" data-tab="${s.tab}">Edit</button></div><div class="rv">${s.lines.map(l=>`<span class="k">${esc(l[0])}</span><span${l[1]?'':' class="no"'}>${l[1]?esc(l[1]):'Not filled in'}</span>`).join('')}</div></div>`}).join('')}
+function makePdf(){
+ const {jsPDF}=window.jspdf,d=new jsPDF({unit:'pt',format:'a4'}),PW=d.internal.pageSize.getWidth(),PH=d.internal.pageSize.getHeight(),MG=44,KW=150,LH=12.4;let y=MG;
+ d.setLineHeightFactor(1.3);
+ const cl=t=>String(t).replace(/[–—]/g,'-').replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[^\n\x20-\xff]/g,'');
+ const need=h=>{if(y+h>PH-MG){d.addPage();y=MG}};
+ d.setFont('helvetica','bold');d.setFontSize(20);d.setTextColor(29,43,44);d.text('Our civil wedding guide',MG,y+14);y+=32;
+ d.setFont('helvetica','normal');d.setFontSize(11);d.setTextColor(93,111,110);
+ d.text(cl('The wedding of '+(S.b||'(bride)')+' and '+(S.g||'(groom)')),MG,y);y+=15;
+ d.text('Prepared '+new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'}),MG,y);y+=26;
+ model().forEach(s=>{
+  need(60);d.setFont('helvetica','bold');d.setFontSize(13);d.setTextColor(39,102,95);d.text(cl(s.h),MG,y);y+=5;
+  d.setDrawColor(213,223,217);d.line(MG,y,PW-MG,y);y+=15;
+  s.lines.forEach(([k,v])=>{
+   d.setFont('helvetica','normal');d.setFontSize(9.5);
+   const kl=d.splitTextToSize(cl(k),KW-10),vl=d.splitTextToSize(cl(v||'-'),PW-2*MG-KW),n=Math.max(kl.length,vl.length);
+   need(n*LH+3);
+   d.setTextColor(93,111,110);d.text(kl,MG,y);
+   v?d.setTextColor(29,43,44):d.setTextColor(179,56,44);d.text(vl,MG+KW,y);
+   y+=n*LH+3;
+  });
+  y+=12;
+ });
+ const pc=d.getNumberOfPages();
+ for(let i=1;i<=pc;i++){d.setPage(i);d.setFont('helvetica','normal');d.setFontSize(8);d.setTextColor(140,140,140);d.text('Page '+i+' of '+pc,PW-MG,PH-22,{align:'right'})}
+ return d.output('blob');
+}
+async function exportPdf(){
+ const m=$('#pdfmsg'),say=t=>{if(m)m.textContent=t};
+ if(!window.jspdf)return say('The PDF tool did not load. Check your internet connection and reload.');
+ say('Preparing your PDF…');
+ try{const b=makePdf();if(DL)await DL.save({filename:'civil-wedding-guide.pdf',data:b});else{const u=URL.createObjectURL(b),l=document.createElement('a');l.href=u;l.download='civil-wedding-guide.pdf';document.body.appendChild(l);l.click();l.remove();setTimeout(()=>URL.revokeObjectURL(u),4000)}say('Saved. Check your downloads.')}
+ catch(e){say(e&&e.code=='declined'?'Download cancelled.':'Couldn’t save the PDF. Please try again.')}
+}
+function draw(){
+ const v=document.querySelector('.view'),sl=v?v.scrollLeft:0,st=v?v.scrollTop:0;
+ document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-selected',b.dataset.tab==S.tab));
+ $('#app').innerHTML=({seat:seatView,check:checkView,flow:flowView,info:infoView,prep:prepView,sup:supView,music:musicView,rev:reviewView})[S.tab]();
+ const w=document.querySelector('.view');if(w){w.scrollLeft=sl;w.scrollTop=st}
+}
+const unseat=x=>{x.t=null;x.i=null};
+function place(gid,tid,i){
+ const g=S.guests.find(y=>y.id==gid);if(!g)return;
+ const occ=tid?S.guests.find(y=>y.t==tid&&y.i==i):null;
+ if(occ&&occ!==g){occ.t=g.t;occ.i=g.i}
+ g.t=tid;g.i=tid?i:null;sel=null;save();draw();
+}
+function setCap(t,c){t.c=Math.max(1,Math.min(40,c));S.guests.forEach(x=>{if(x.t==t.id&&x.i>=t.c)unseat(x)})}
+function addTable(k,src){
+ const n=q=>S.tables.filter(x=>x.k==q).length+1;
+ const t=src?{...src,id:uid(),n:src.n+' copy',x:Math.min(FW-100,src.x+40),y:Math.min(FH-100,src.y+40)}:{id:uid(),k,n:k=='round'?'Table '+n('round'):'Long table '+n('long'),l:'',c:12,x:40,y:Math.max(0,FH-260),v:0};
+ S.tables.push(t);selT=t.id;
+}
+document.addEventListener('click',e=>{
+ const tab=e.target.closest('[data-tab]');if(tab){S.tab=tab.dataset.tab;save();return draw()}
+ const st=e.target.closest('.st'),el=e.target.closest('[data-a]'),a=el&&el.dataset.a,id=el&&el.dataset.id,gid=el&&el.dataset.g;
+ const T=S.tables.find(x=>x.id==selT);
+ if(st&&!a){if(sel)return place(sel,st.dataset.t,+st.dataset.i);if(st.dataset.g){sel=st.dataset.g;draw()}return}
+ if(!a){if(sel&&e.target.closest('[data-pool]')){const g=S.guests.find(x=>x.id==sel);if(g)unseat(g);sel=null;save();draw()}return}
+ if(a=='sel'){sel=sel==gid?null:gid;return draw()}
+ if(a=='pdf')return exportPdf();
+ if(a=='del')S.guests=S.guests.filter(x=>x.id!=gid);
+ else if(a=='add'){const s=$('#gs').value;$('#gn').value.split(/[,\n]/).map(v=>v.trim()).filter(Boolean).forEach(n=>S.guests.push({id:uid(),n,s,t:null,i:null}))}
+ else if(a=='ar')addTable('round');
+ else if(a=='al')addTable('long');
+ else if(a=='reset')S.guests.forEach(unseat);
+ else if(a=='zi')S.z=Math.min(1.2,+(S.z+.1).toFixed(2));
+ else if(a=='zo')S.z=Math.max(.4,+(S.z-.1).toFixed(2));
+ else if(T&&a=='inc')setCap(T,T.c+1);
+ else if(T&&a=='dec')setCap(T,T.c-1);
+ else if(T&&a=='rot')T.v=T.v?0:1;
+ else if(T&&a=='dup')addTable(null,T);
+ else if(T&&a=='dts'){S.guests.forEach(x=>{if(x.t==T.id)unseat(x)});S.tables=S.tables.filter(x=>x.id!=T.id);selT=null}
+ else if(a=='mode'){S.mode=el.dataset.m}
+ else if(a=='fa'){S.flow[S.mode].push({t:'',a:''})}
+ else if(a=='fd'){S.flow[S.mode].splice(+id,1)}
+ else return;
+ save();draw();
+});
+document.addEventListener('keydown',e=>{if(e.key=='Enter'&&e.target.id=='gn')document.querySelector('[data-a=add]').click();if((e.key=='Enter'||e.key==' ')&&e.target.matches('.chip')){e.preventDefault();e.target.click()}});
+document.addEventListener('change',e=>{const f=e.target.dataset.f;if(!f)return;const id=e.target.dataset.id,v=e.target.value;
+ if(f=='b'||f=='g'||f=='wd'){S[f]=v;if(f=='wd')cd()}
+ else if(f=='fw'||f=='fh'){const n=Math.max(600,Math.min(6000,Math.round(+v)||600));S[f]=n;const [W,H]=fs();S.tables.forEach(t=>{const g=geo(t);t.x=Math.max(0,Math.min(W-g.w,t.x));t.y=Math.max(0,Math.min(H-g.h,t.y))})}
+ else if(f=='tn'||f=='tl'){const t=S.tables.find(x=>x.id==selT);if(t){if(f=='tn')t.n=v||t.n;else t.l=v;const q=document.querySelector(`[data-tb="${t.id}"] ${f=='tn'?'b':'.lbl'}`);if(q)q.textContent=f=='tn'?t.n:t.l}}
+ else if(f=='ck')S.checks[id]=e.target.checked;else if(f=='ck2')S.f[id]=e.target.checked;else if(f=='v')S.f[id]=v;
+ else if(f=='ft')S.flow[S.mode][id].t=v;else if(f=='fa')S.flow[S.mode][id].a=v;
+ save();if(f=='tc'||f=='ck'||f=='ck2'||f=='fw'||f=='fh')draw()});
+let drag=null;
+document.addEventListener('pointerdown',e=>{
+ const b=e.target.closest('.body');if(!b)return;
+ const el=b.parentElement,t=S.tables.find(x=>x.id==el.dataset.tb);if(!t)return;
+ selT=t.id;document.querySelectorAll('.tbl').forEach(o=>o.classList.toggle('sel',o===el));$('#tools').innerHTML=toolsHtml();
+ drag={t,el,sx:e.clientX,sy:e.clientY,ox:t.x,oy:t.y,moved:false};b.setPointerCapture(e.pointerId);
+});
+document.addEventListener('pointermove',e=>{
+ if(!drag)return;const g=geo(drag.t),dx=(e.clientX-drag.sx)/S.z,dy=(e.clientY-drag.sy)/S.z;
+ if(Math.abs(dx)+Math.abs(dy)>3)drag.moved=true;
+ drag.t.x=Math.round(Math.max(0,Math.min(fs()[0]-g.w,drag.ox+dx)));drag.t.y=Math.round(Math.max(0,Math.min(fs()[1]-g.h,drag.oy+dy)));
+ drag.el.style.left=drag.t.x+'px';drag.el.style.top=drag.t.y+'px';
+});
+const endDrag=()=>{if(drag){if(drag.moved)save();drag=null}};
+document.addEventListener('pointerup',endDrag);document.addEventListener('pointercancel',endDrag);
+document.addEventListener('dragstart',e=>{const c=e.target.closest&&e.target.closest('[data-g]');if(c&&!e.target.closest('button')){e.dataTransfer.setData('text/plain',c.dataset.g);e.dataTransfer.effectAllowed='move'}});
+document.addEventListener('dragover',e=>{const z=e.target.closest('.st,[data-pool]');if(z){e.preventDefault();document.querySelectorAll('.over').forEach(o=>o.classList.remove('over'));z.classList.add('over')}});
+document.addEventListener('dragend',()=>document.querySelectorAll('.over').forEach(o=>o.classList.remove('over')));
+document.addEventListener('drop',e=>{const z=e.target.closest('.st,[data-pool]');if(!z)return;e.preventDefault();const id=e.dataTransfer.getData('text/plain');z.dataset.t?place(id,z.dataset.t,+z.dataset.i):place(id,null,null)});
+function cd(){const el=$('#cd');if(!el)return;if(!S.wd){el.textContent='Pick your date for the countdown';return}
+ const [y,m,d]=S.wd.split('-').map(Number),n=new Date(),days=Math.round((new Date(y,m-1,d)-new Date(n.getFullYear(),n.getMonth(),n.getDate()))/864e5);
+ el.textContent=days>1?days+' days to go'+(days>=14?' ('+Math.floor(days/7)+' weeks'+(days%7?' and '+days%7+(days%7==1?' day':' days'):'')+')':''):days==1?'Tomorrow is the day!':days==0?'Today is the day!':'Your wedding was '+(-days)+(days==-1?' day':' days')+' ago'}
+if(S.wd)document.querySelector('[data-f=wd]').value=S.wd;cd();setInterval(cd,3600000);
+document.querySelector('[data-f=b]').value=S.b||'';document.querySelector('[data-f=g]').value=S.g||'';
+draw();
+</script>
+</body>
+</html>
